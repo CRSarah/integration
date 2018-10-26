@@ -1,0 +1,413 @@
+body {
+  background-image: url(../images/background.png);
+  background-repeat: repeat;
+  color: #635756;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  position: fixed;
+  top: 0;
+  left: 4em;
+}
+
+nav {
+  margin-top: 1.5em;
+  text-align: center;
+  font-family: 'Drive';
+  font-size: 0.9em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 5%;
+}
+
+nav ul li:hover {
+  background-color: #635756;
+}
+
+.navlinks {
+  text-transform: uppercase;
+  color: #635756;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navlinks:hover {
+  color : white;
+}
+
+#container {
+  width: 60%;
+  margin: 4em auto;
+}
+
+article {
+  display: flex;
+  margin-top: 5em;
+  background-color: white;
+}
+
+.pinktriangle {
+  background-image: url(../images/pink-triangle.png);
+  background-repeat: repeat-x;
+  margin: 0 auto auto auto;
+  width: 100%;
+  height: 1em;
+}
+
+.bluetriangle {
+  background-image: url(../images/blue-triangle.png);
+  background-repeat: repeat-x;
+  margin: 0 auto auto auto;
+  width: 100%;
+  height: 1em;
+}
+
+article img {
+  width: 45%;
+}
+
+article div {
+  width: 55%;
+  padding: 2em;
+}
+
+.date {
+  font-family: 'Wedrive';
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 6em;
+}
+
+.box {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Drive';
+  font-weight: 900;
+  line-height: 1;
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+
+.text {
+  font-family: 'Wedrive';
+  line-height: 2;
+  margin-top: 0.2em;
+}
+
+.articlefooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-top: 10em;
+}
+
+.left {
+  width: 50%;
+  padding: 0;
+}
+
+.category {
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.category a {
+  text-decoration: none;
+  background-color: rgba(224,221,221, 0.3);
+  padding: 0.2em 0.5em;
+  border-radius: 5%;
+  color: #635756;
+  text-transform: uppercase;
+  font-family: 'Wedrive';
+  left: 0;
+  margin-right: 0.3em;
+}
+
+.category a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  background-color: #E0DDDD;
+  width: 1.5em;
+  border-radius: 50%;
+  margin-left: 0.3em;
+}
+
+.social:hover {
+  background-color: #635756;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 5em auto;
+}
+
+.button {
+  width: 8em;
+  padding: 0.5em 1.2em 0.5em 1.2em;
+  margin: 0.5em;
+  border-radius: 5%;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgba(99, 87, 86, 0.5);
+  color: white;
+  font-family: 'Drive';
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.button:hover {
+  background-color: #635756;
+}
+
+footer {
+  font-family: 'Wedrive';
+  border-top: 1px solid #635756;
+  width: 60%;
+  margin: auto;
+  display: flex;
+}
+
+.copyright {
+  width: 49%;
+  position: relative;
+}
+
+.droits {
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.agence {
+  position: absolute;
+  top: 0.8em;
+  left: 12em;
+  font-size: 0.8em;
+}
+
+.links {
+  width: 51%;
+}
+
+.links ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links ul li {
+  text-decoration: none;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #635756;
+  font-size: 0.9em;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 320px) {
+  body {
+    position: relative;
+    margin-top: 0;
+  }
+
+  #logo {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    width: 3em;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.3em;
+  }
+
+  #container {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  article {
+    display: block;
+    margin-top: 2em;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  article div {
+    width: 100%;
+  }
+
+  .box {
+    padding: 0.5em;
+  }
+
+  .date {
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .text {
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .articlefooter {
+    margin-top: 3em;
+  }
+
+  .category {
+    margin: 0.5em 0 0.5em 0.5em;
+  }
+
+  footer {
+    width: 90%;
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .agence {
+  left: auto;
+  }
+  
+  .links {
+    width: 100%;
+  }
+
+  .links ul {
+    display: block;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  body {
+    position: relative;
+    margin-top: 0;
+  }
+
+  #logo {
+    position: absolute;
+    left: 0.5em;
+    width: 4em;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.3em;
+  }
+
+  #container {
+    width: 90%;
+  }
+
+  article {
+    display: block;
+    margin-top: 2em;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  article div {
+    width: 100%;
+  }
+
+  .box {
+    padding: 1em;
+  }
+
+  .date {
+    margin-bottom: 1.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .text {
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .articlefooter {
+    margin-top: 3em;
+  }
+
+  footer {
+    width: 90%;
+    display: flex;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .droits {
+    margin: 0;
+  }
+
+  .agence {
+  left: auto;
+  }
+  
+  .links {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .links ul {
+    display: block;
+    margin: 0;
+  }
+}
